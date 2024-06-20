@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralWhizz Image Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>NeuralWhizz Image Generator</h1>
+        <div class="user-actions">
+            <button><i class="fas fa-sign-in-alt"></i> Sign up / Log in</button>
+            <button class="premium-btn"><i class="fas fa-crown"></i> Try premium</button>
+        </div>
+    </header>
+    <main>
+        <div class="generator-container">
+            <h2>AI Image Generator</h2>
+            <p>Describe your ideas and then watch them transform from text to images.</p>
+            <input type="text" placeholder="What do you want to make?" id="prompt-input">
+            <button id="generate-btn">Generate</button>
+        </div>
+        <div class="image-gallery" id="image-gallery">
+            <!-- Images will be appended here -->
+        </div>
+        <!-- <div class="const-images">
+            <img src="{{ url_for('static', filename='ai model.jpeg') }}" alt="Image 1">
+            <img src="{{ url_for('static', filename='ai model 2.jpeg') }}" alt="Generated Image 2">
+            <img src="{{ url_for('static', filename='ai model 3.jpeg') }}" alt="Generated Image 3">
+            <img src="{{ url_for('static', filename='ai model 4.jpeg') }}" alt="Generated Image 4">
+        </div> -->
+    </main>
+</body>
+</html>
