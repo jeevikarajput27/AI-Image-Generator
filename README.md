@@ -2,7 +2,7 @@
 
 Welcome to the AI Image Generator repository! This project leverages the power of Stable Diffusion to generate high-quality images based on given prompts. It is implemented in Python and provides an easy-to-use interface for generating and customizing images.
 
-Note: This application is currently under development and will be further refined. 
+
 
 # Features
 High-Quality Image Generation: Create stunning images from text prompts using state-of-the-art Stable Diffusion models.
